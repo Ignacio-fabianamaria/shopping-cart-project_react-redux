@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import './productsField.css'
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
+import { HiShoppingCart } from 'react-icons/hi';
 // import PropTypes from 'prop-types';
 
 class ProductsField extends Component {
@@ -27,6 +28,12 @@ class ProductsField extends Component {
                 <img src={e.thumbnail} alt={e.title} />
                 <p className='title-product'>{e.title}</p>
                 <p>R$: {e.price}</p>
+                <button
+                type='button'
+                className='add-cart'
+                onClick={ console.log('teste')}>
+                  <HiShoppingCart style={{ fontSize: '20px', color: ' rgb(205, 55, 0)' }} />
+                  </button>
             </div>
           ))}
             </ul>

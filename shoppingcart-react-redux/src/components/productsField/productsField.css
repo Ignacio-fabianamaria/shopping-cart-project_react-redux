@@ -1,11 +1,11 @@
 body {
-    background-color:lightslategray;
+    background-color:rgb(198, 224, 225);
 }
 
 container-product {
     display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 70%;
 }
 
 
@@ -14,7 +14,7 @@ container-product {
     flex-basis: 70%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 0;
+    margin: 50px 0;
     gap: 5px;
   }
 
@@ -35,5 +35,12 @@ background-color:white;
         flex-grow: 1;
         padding: 10px;
         text-align: center;
-        width: 150px;
+        width: 170px;
+  }
+
+  .add-cart {
+   cursor: pointer;
+    border:none;
+    background-color: white;
+    padding: 3px;
   }
