@@ -3,6 +3,7 @@ import { getRequest} from '../../redux/actions';
 import { connect } from 'react-redux';
 import './productsField.css'
 import Header from '../header/Header';
+import Footer from '../footer/Footer';
 // import PropTypes from 'prop-types';
 
 class ProductsField extends Component {
@@ -29,6 +30,7 @@ class ProductsField extends Component {
             </div>
           ))}
             </ul>
+            <Footer />
         </section>
       );
     }
