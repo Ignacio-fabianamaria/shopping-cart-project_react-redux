@@ -1,0 +1,39 @@
+body {
+    background-color:lightslategray;
+}
+
+container-product {
+    display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.items {
+    display: flex;
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 5px;
+  }
+
+  .item {
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 5px;
+border: solid 1px rgb(210, 204, 204);
+border-radius: 5px;
+background-color:white;
+
+  } 
+
+  .title-product {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding: 10px;
+        text-align: center;
+        width: 150px;
+  }
