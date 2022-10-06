@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { getRequest} from '../../redux/actions';
 import { connect } from 'react-redux';
 import './productsField.css'
+import Header from '../header/Header';
 // import PropTypes from 'prop-types';
 
 class ProductsField extends Component {
@@ -18,6 +19,7 @@ class ProductsField extends Component {
       }
       return (
         <section className='container-product'>
+          <Header />
           <ul className='items'>
             {productList.map((e) =>(
             <div className='item' key={e.id}>

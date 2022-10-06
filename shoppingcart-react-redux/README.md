@@ -4,7 +4,6 @@
 # Academia de React Trybe - ShoppingCart com React Redux ![image](https://user-images.githubusercontent.com/104525137/194192565-58b2c8f5-22b8-4642-b33a-fec735c7585c.png)
 
 Projeto desenvolvido em mentoria de Academia de React ministrada pelo Instrutor Trybe André Horman.
-[imagem]image.png
 
 Objetivo desse projeto foi refatorar o projeto ShoppingCart anteriormente desenvolvido apenas em javascrit, utilizando conceitos de React e Redux. Para o seu desenvolvimento foi utilizado uma API do Mercado Livre para obtermos os dados da aplicação.
 
