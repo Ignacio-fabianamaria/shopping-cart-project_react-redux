@@ -32,7 +32,7 @@ class ProductsField extends Component {
                 type='button'
                 className='add-cart'
                 onClick={ console.log('teste')}>
-                  <HiShoppingCart style={{ fontSize: '20px', color: ' rgb(205, 55, 0)' }} />
+                  <HiShoppingCart style={{ fontSize: '25px', color: ' #B8860B' }} />
                   </button>
             </div>
           ))}

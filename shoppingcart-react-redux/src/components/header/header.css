@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    background-color:black;
+    background-color:#4682B4;
     display: flex;
     align-items: center;
     width: 100%;
@@ -12,7 +12,7 @@
   }
 
   .title {
-    color:  rgb(205, 55, 0);
+    color: #EEE8AA;
     font-size: 30px;
     padding-left: 30px;
   }
@@ -23,7 +23,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color:rgb(31, 162, 167);
+    background-color:#87CEEB;
     width: 40%;
     height: 100%;
     margin-left: 30px;
@@ -40,7 +40,7 @@
     right: 61.5%;
     width: 39.5%;
     height: 15px;
-    background: orangered;
+    background:#B8860B;
     transform: skew(-45deg);
     z-index: 0;
   }
@@ -52,7 +52,7 @@
     right: 61.5%;
     width: 39.5%;
     height: 15px;
-    background: orangered;
+    background:#B8860B;
     transform: skew(45deg);
     z-index: 0;
   }
