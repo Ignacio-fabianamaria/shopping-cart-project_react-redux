@@ -8,7 +8,7 @@ class Header extends React.Component {
       <header className='header'>
         <div className='container-title'>
           <span className='title'>
-            <strong style={{color: ' #FFD700'}}>Shopping</strong>Cart
+            <strong style={{color: ' #FFD700'}}>Shopping</strong>Cell
           </span>
         </div>
         <HiShoppingCart style={{ fontSize: '50px', color: ' #FFD700' }} />

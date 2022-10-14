@@ -9,7 +9,7 @@ export const getRequest = () => async (dispatch) => {
     try {
         dispatch(inicialRequest());// disparando action de inicialização antes de fazer a requisição.
         dispatch(isLoading());
-        const endpoint = 'https://api.mercadolibre.com/sites/MLB/search?q=celular';
+        const endpoint = 'https://api.mercadolibre.com/sites/MLB/search?q=cel';
         const objectProducts = await fetch(endpoint);
         const result = await objectProducts.json();
         

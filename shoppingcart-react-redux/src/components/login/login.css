@@ -1,0 +1,60 @@
+.login-page {
+    background-color: #4682B4 ;
+   
+    display: flex;
+    justify-content: center;
+   
+    align-self: center;
+    
+    width: 1675px;
+    height: 860px;
+}
+
+.form-login {
+   
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    background-color: #4682B4;
+    background-image: url(./imagens/—Pngtree—handheld\ camera\ red\ heart\ blue_6156729.png);
+    background-repeat: no-repeat;
+    width: 950px;
+    height: 750px;
+    padding: 10px;
+   
+}
+
+.title-login {
+    color:#EEE8AA;
+    font-size: 30px;
+    padding: 50px;
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: -500px;
+}
+
+input {
+    margin-top: 20px;
+    margin-left: -530px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    pad: 10px;
+}
+
+.enter {
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: -530px;
+    width: 180px;
+    height: 25px;
+    pad: 10px;
+    background-color: #cfa435;
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+}
+
