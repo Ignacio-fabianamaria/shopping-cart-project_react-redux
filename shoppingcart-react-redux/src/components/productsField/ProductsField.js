@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { getRequest} from '../../redux/actions';
+import { addCartItens, getRequest} from '../../redux/actions';
 import { connect } from 'react-redux';
 import './productsField.css'
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import { HiShoppingCart } from 'react-icons/hi';
+import Loading from '../loading/Loading';
+import Cart from '../cart/Cart';
 // import PropTypes from 'prop-types';
 
 class ProductsField extends Component {
@@ -12,33 +14,47 @@ class ProductsField extends Component {
         const { dispatch } = this.props;
         dispatch(getRequest());
       };
-
+ addCart=(product) => {
+  const { dispatch } = this.props;
+  console.log(product);
+  const storageArea = JSON.parse(localStorage.getItem('cartItens')) || [];
+  const cartList = [...storageArea, product];
+  localStorage.setItem('cartItens', JSON.stringify(cartList));
+  dispatch(addCartItens(cartList));
+ }
     render() {
       const { isLoading, productList } = this.props;
 
       if(isLoading) {
-        return <h1>Loading...</h1>
+        return <Loading />
       }
       return (
+        <div>
+           <Header />
+          <section className='shopping-cell'>
         <section className='container-product'>
-          <Header />
           <ul className='items'>
-            {productList.map((e) =>(
-            <div className='item' key={e.id}>
-                <img src={e.thumbnail} alt={e.title} />
-                <p className='title-product'>{e.title}</p>
-                <p>R$: {e.price}</p>
+            {productList.map(({id, thumbnail, title, price}) =>(
+            <div className='item' key={id}>
+                <img src={thumbnail} alt={title} style={{width: '100px', height: '110px'}}/>
+                <p className='title-product'>{title}</p>
+                <p>R$: {price}</p>
                 <button
                 type='button'
                 className='add-cart'
-                onClick={ console.log('teste')}>
-                  <HiShoppingCart style={{ fontSize: '25px', color: ' #B8860B' }} />
+                onClick={ () => this.addCart({id, thumbnail, title, price})}>
+                  <HiShoppingCart style={{ fontSize: '25px', color: '  #FFD700' }} />
+                  <strong>Adicionar ao carrinho</strong>
                   </button>
             </div>
           ))}
-            </ul>
-            <Footer />
+            </ul> 
+        </section> 
+        <Cart />
         </section>
+        <Footer />
+        </div> 
+        
       );
     }
   }

@@ -1,9 +1,9 @@
-import { GET_PRODUCTS, INICIAL_REQ, IS_LOADING } from "./actionTypes";
+import { ADD_CART, GET_PRODUCTS, INICIAL_REQ, IS_LOADING } from "./actionTypes";
 
 export const inicialRequest = () => ({ type: INICIAL_REQ });
 export const isLoading = () => ({ type: IS_LOADING });
 export const getProductsAPI = (payload) => ({ type: GET_PRODUCTS, payload });
-
+export const addCartItens = (payload) => ({ type: ADD_CART, payload });
 
 export const getRequest = () => async (dispatch) => {
     try {
